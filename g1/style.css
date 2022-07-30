@@ -1,0 +1,197 @@
+* {
+    font-family: "Encode Sans", sans-serif;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+.container {
+    display: flex;
+}
+
+.secao {
+    width:627px;
+    justify-content: space-between;
+}
+
+.page {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.links {
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #F5F6F7;
+    border-left: 0px;
+    height: 47.5px;
+    border-right: 0px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.principal h1 {
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 67px;
+    letter-spacing: -0.01em;
+    color: #C4160C;
+    width: 624px;
+    margin-bottom: 20px;
+    margin-top: 31.5px;
+}
+
+.principal h2 {
+
+    width: 622px;
+
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+
+    margin-bottom: 7px;
+    color: #303134;
+
+}
+
+.divisoria {
+    width: 624px;
+    height: 1px;
+    background: #EBEDEF;
+    margin-bottom: 25px;
+}
+
+.lado {
+    margin-bottom: 0px;
+    margin-left: 36px;
+    margin-right: 35px;
+    margin-top: 36px;
+    height:845px;
+    background: #EBEDEF;
+    width: 1px;
+}
+
+.noticia img {
+    height: 110px;
+    width: 193px;
+    margin-bottom: 11px;
+    border-radius: 12px;
+}
+
+.noticia h2 {
+    
+    width: 192px;
+    
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+
+    color: #C4170C;
+}
+
+.noticia h1 {
+    
+    width: 192px;
+    
+    margin-top: 6px;
+
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.045em;
+
+    color: #2F3134;
+
+
+}
+
+.noticia h3 {
+
+    width: 174px;
+    height: 42.5px;
+
+    margin-top: 4.5px;
+    margin-bottom: 36px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    
+    letter-spacing: -0.048em;
+    
+    color: #2F3134;
+}
+
+.hemisferio {
+   flex-direction: column;
+}
+
+.esporte img, .tv img {
+    margin-top:36px;
+    margin-bottom: 11px;
+    width: 240px;
+    height: 128px;
+}
+
+.esporte h2 {
+    color: #16AE54;
+}
+
+.tv h2 {
+    color: #EC8006;
+}
+
+a {
+    text-decoration: none;
+}
+
+.esporte h1, .tv h1 {
+    
+    width: 240px;
+    height: 84px;
+
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.045em;
+
+    color: #2F3134;
+
+}
+
+.esporte h3, .tv h3 {
+
+    width: 217px;
+
+    font-family: 'Encode Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.048em;
+    margin-bottom: 50px;
+
+    color: #2F3134;
+}
