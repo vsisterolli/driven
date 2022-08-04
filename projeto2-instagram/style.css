@@ -104,6 +104,24 @@ input {
     height: 40px;
 }
 
+.bottom-text {
+    margin-top: 33px;
+}
+
+.bottom-text h3 {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    margin-bottom: 18px;
+
+    color: #C7C7C7;
+
+}
+
 button:hover {
     color: #B2DFFC;
 }
