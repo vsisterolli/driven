@@ -17,6 +17,43 @@ body {
 .comentarios {
     font-family: 'Roboto';
     font-size: 14px;
+    line-height: 18px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    border-top: 0px;
+}
+
+.comentar {
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    border-top: 0px;
+}
+
+.comentarios h1 {
+    margin-top: 5px;
+}
+
+.comentario {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario ion-icon {
+    font-size: 18px;
+}
+
+.comentarios h3 {
+    font-weight: 400;
+    margin: 5px 0;
+    color: #8E8E8E;
 }
 
 .div-vertical {
@@ -48,10 +85,27 @@ body {
 }
 
 .page {
-    height: 1940px;
+    height: 2340px;
     margin-right: 30px;
     overflow: hidden;
     max-width: 935px;
+}
+
+button {
+    background-color: white;
+    border: 0px;
+    color: #0095F6;
+    transition: color 300ms;
+}
+
+input {
+    border: 0px;
+    width: 80%;
+    height: 40px;
+}
+
+button:hover {
+    color: #B2DFFC;
 }
 
 .icons {
@@ -219,9 +273,9 @@ strong {
     
     border: 1px solid #DBDBDB;
     border-radius: 3px;
+    border-bottom: 0px;
 
     margin-top: -4px;
-    margin-bottom: 60px;
 }
 
 .post-icons {
