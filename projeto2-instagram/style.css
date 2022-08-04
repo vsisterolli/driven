@@ -11,7 +11,12 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #F5F6F7;
+}
+
+.comentarios {
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
 .div-vertical {
@@ -180,6 +185,10 @@ ion-icon {
 .foto {
     margin-left: 1px;
     margin-right: 1px;
+}
+
+video {
+    margin-top: 0px;
 }
 
 .likes img {
