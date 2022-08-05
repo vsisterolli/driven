@@ -424,6 +424,15 @@ strong {
         width: 100%;
     }
 
+    .page {
+        height: 2000px;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
     .header {
         justify-content: space-around;
     }
@@ -461,6 +470,9 @@ strong {
     }
     .icons-mobile ion-icon {
         font-size: 21px;
+    }
+    .foto {
+        width: 100%;
     }
     .space {
         height: 54px;
