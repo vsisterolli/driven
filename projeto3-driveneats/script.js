@@ -1,20 +1,25 @@
-let itens_selecionados = 0;
+let selected_items = 0;
 let selected = [];
 
 function selecionar(index) {
 
     const inicio_secao = parseInt(index/7) * 7;
 
-    let elements = document.getElementsByClassName('item');
+    let items = document.getElementsByClassName('item');
+    let imgs = document.querySelectorAll('.order-bottom img')
+        
     for(let i = inicio_secao; i < inicio_secao + 7; i++) {
-        console.log(i, index, selected[i]);
         if(selected[i]) {
             selected[i] = 0;
-            elements[i].style.setProperty("border", "solid 0px red");
+            items[i].style.setProperty("box-shadow", "none");
+            imgs[i].style.setProperty("display", "none")
+            selected_items--;
         }
         else if(i == index) { 
-            elements[i].style.setProperty("border", "solid 4px #32B72F");
+            items[i].style.setProperty("box-shadow", "0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F");
+            imgs[i].style.setProperty("display", "initial")
             selected[index] = 1;
+            selected_items++;
         }
     }
     
