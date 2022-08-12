@@ -30,6 +30,18 @@ function confirm() {
         hide[i].style.setProperty('opacity', '5%')
 
     const confirm_box = document.querySelector('.confirm');
+    const items = document.querySelectorAll('.item-description h2');
+
+    for(let i = 0; i < items.length; i+=2){
+        items[i].textContent = cart[i/2][0];
+        items[i+1].textContent = (cart[i/2][1].toFixed(2)).replace('.', ',');
+    }
+ 
+    const total = document.querySelectorAll('#end-value');
+    total[0].textContent = "R$ " + (cart[0][1] + cart[1][1] + cart[2][1]).toFixed(2).replace('.', ',');
+
+    console.log(total.textContent);
+    
     confirm_box.style.setProperty('display', 'flex', 'important'); 
 
 
