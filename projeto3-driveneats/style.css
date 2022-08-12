@@ -107,7 +107,7 @@ h1 {
 }
 
 .secao {
-    overflow: hidden;
+    overflow-x: scroll;
     margin-bottom: 27px;
     margin-top: 17px;
 }
