@@ -175,6 +175,7 @@ h1 {
     letter-spacing: 0.018em;
     background-color: white;
     color: #50D074;
+    align-self: center;
 }
 
 #cancel {
