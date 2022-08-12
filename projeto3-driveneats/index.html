@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="confirm">
+        <h1>Confirme seu pedido</h1>
+        <div class="container item-description">
+            <h2>Frango Yin Yang</h2>
+            <h2>14,90</h2>
+        </div>
+        <div class="container item-description">
+            <h2>Frango Yin Yang</h2>
+            <h2>14,90</h2>
+        </div>
+        <div class="container item-description">
+            <h2>Frango Yin Yang</h2>
+            <h2>14,90</h2>
+        </div>
+        <div class="container total">
+            <h3>TOTAL</h2>
+            <h2>R$14,90</h2>
+        </div>
+        <button onclick="send_request();">Tudo certo, pode pedir!</button>
+        <button id="cancel" onclick="cancel();">Cancelar</button>
+    </div>
     <div class="header">
         <h1>DrivenEats</h1>
         <h2>Sua comida em 6 minutos</h2>
@@ -21,7 +42,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -30,7 +51,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -39,7 +60,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -48,7 +69,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -57,7 +78,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -66,7 +87,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -75,7 +96,7 @@
                 <h1>Frango Yin Yang</h1>
                 <h3>Um pouco de batata, um pouco de salada</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 14,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>       
@@ -87,7 +108,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -96,7 +117,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -105,7 +126,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -114,7 +135,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -123,7 +144,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -132,7 +153,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -141,7 +162,7 @@
                 <h1>Coquinha gelada</h1>
                 <h3>Lata 350ml</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 4,90</h2>
+                    <h2>R$ <span class="preco">14,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -153,7 +174,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span class="preco">7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -162,7 +183,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span class="preco">7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -171,7 +192,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span class="preco">7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -180,7 +201,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span class="preco">7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -189,7 +210,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span>7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -198,7 +219,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span>7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
@@ -207,7 +228,7 @@
                 <h1>Pudim</h1>
                 <h3>Apenas pudim</h3>
                 <div class="container order-bottom">
-                    <h2>R$ 7,90</h2>
+                    <h2>R$ <span>7,90</span></h2>
                     <img src="images/Vector.svg">
                 </div>
             </div>
